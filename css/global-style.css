@@ -60,15 +60,17 @@ a.active{
 
 .hero-block{
     background-color: #62D0DF;
+}
+.hero-block .container{
     background-image: url(../img/header.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 600px;
+    height: 550px;
 }
 .hero-text{
     flex-direction: column;
-    width: 60%;
+    padding-right: 45%;
     color: #fff;
     padding-top: 100px;
     font-size: 26px;
