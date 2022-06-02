@@ -15,7 +15,13 @@ body{
 }
 a{
     text-decoration: none;
+    color: #333;
+    transition: .3s;
 }
+a:hover{
+    color: #633;
+}
+
 
 
 
@@ -40,9 +46,6 @@ header .container{
 }
 .navigation-block ul li:first-child{
     margin-left: 0;
-}
-li a{
-    color:darkblue;
 }
 a.active{
     font-weight: bold;
@@ -72,7 +75,7 @@ a.active{
     flex-direction: column;
     padding-right: 45%;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 26px;
 }
 .hero-text h3{
@@ -83,4 +86,74 @@ a.active{
 }
 .hero-img{
     width: 100%;
+}
+
+
+
+.title{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    width: 130px;
+    background-color: #000;
+    height: 4px;
+    top: 90%;
+}
+
+
+
+#my-examples{
+    background-color: rgb(255, 227, 217);
+}
+.content{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.card{
+    width: 31%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+.card:hover{
+    box-shadow: 0 0 10px -1px #999;
+}
+.card:hover > .card-img{
+    opacity: .7;
+}
+.card-hidden{
+    visibility:hidden;
+}
+.card-img{
+    background-color: #ccc;
+    background-image: url(../img/card-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    transition: .3s;
+}
+.card-text{
+    padding: 20px 15px;
+    background-color: white;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.card-text h3{
+    margin-top: 0;
+}
+.card-text p{
+    color: #3f3f3f;
+    text-indent: 25px;
+    text-align: justify;
 }
